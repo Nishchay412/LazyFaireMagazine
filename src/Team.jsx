@@ -1,6 +1,7 @@
 import React from "react";
 import { team } from "./components/teaminfo"; // Assuming 'team' is the array holding team data
-
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 export function Team() {
   return (
     <div className="flex flex-col bg-[url('/background.png')] bg-cover bg-center">

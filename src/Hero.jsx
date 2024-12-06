@@ -6,13 +6,18 @@ export function Hero() {
         <div>
            
         
-      <div className= " bg-[url('/background.png')] h-screen bg-cover bg-center ">
+      <div className= " bg-[url('/background.png')] h-full bg-cover bg-center ">
       <div className="w-full h-screen overflow-hidden">
   <img src="/gradient.png" className="w-full h-auto object-cover" alt="Gradient" />
 </div>
 
     </div>
+    <div className="relative">
+
+    <Footer/>
+    </div>
       </div>
+      
 
 
     );

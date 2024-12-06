@@ -1,32 +1,36 @@
 // main.jsx or index.jsx
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { Team } from './Team';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { Team } from "./Team";
+import { Executives } from "./Executive";
+
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
-  Link,
 } from "react-router-dom";
 
-import './index.css';
-import App from './App.jsx';
+import "./index.css";
+import App from "./App.jsx";
 
+// Define the router configuration
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <App/>
-    ),
+    element: <App />,
   },
   {
     path: "/Team",
-    element: <Team/>,
+    element: <Team />,
+  },
+  {
+    path: "/Team/Executives",
+    element: < Executives/>,
   },
 ]);
 
-
-createRoot(document.getElementById('root')).render(
+// Render the router
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
