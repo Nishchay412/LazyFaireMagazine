@@ -50,6 +50,13 @@ export const team_info = {
       }
     ]
   };
+
+  export const team = [
+    { "role": "Creative", "image": "LF-Creative.jpg" },
+    { "role": "Executive", "image": "LF-executive.png" },
+    { "role": "Finance", "image": "LF-Something.jpg" },
+    { "role": "Internal", "image": "LF - Internal.png" }
+  ];
   
       
  
