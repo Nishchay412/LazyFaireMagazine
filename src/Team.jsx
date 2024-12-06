@@ -23,14 +23,16 @@ export function Team() {
               />
               {/* Gradient Overlay */}
               <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-lg"></div>
-              {/* Role Text */}
-              <h3 className="absolute bottom-4 left-4 text-white font-semibold text-lg sm:text-xl bg-black bg-opacity-50 px-3 py-1 rounded-md">
-                {item.role}
-              </h3>
-              {/* Button */}
-              <button className="absolute right-4 top-4 transform bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600 transition-all">
-                CLICK
-              </button>
+              
+              {/* Role Text and Button */}
+              <div className="absolute bottom-4 right-4 flex flex-col items-center space-y-2">
+                {/* Arrow Image */}
+               
+                {/* Role Button */}
+                <button className="text-white font-semibold text-lg sm:text-xl bg-black bg-opacity-50 px-3 py-1 rounded-md">
+                  {item.role}
+                </button>
+              </div>
             </div>
           </div>
         ))}
