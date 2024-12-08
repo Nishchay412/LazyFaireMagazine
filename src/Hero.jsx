@@ -1,25 +1,26 @@
 import React from "react";
-import { Header } from "./components/Header";
 import { Footer } from "./Footer";
+
 export function Hero() {
-    return (
-        <div>
-           
-        
-      <div className= " bg-[url('/background.png')] h-full bg-cover bg-center ">
-      <div className="w-full h-screen overflow-hidden">
-  <img src="/gradient.png" className="w-full h-auto object-cover" alt="Gradient" />
-</div>
+  return (
+    <div>
+      {/* Background Section */}
+      <div className="bg-[url('/backgroundimage.png')] h-screen bg-cover bg-center">
+        {/* Centered Front Page Magazine */}
+        <div className="flex items-center justify-center h-full">
+        <img
+  src="/frontpage_magazine.png"
+  className="w-auto h-auto max-w-xs max-h-[75vh] object-contain shadow-lg py-2 mt-6"
+  alt="Front page magazine"
+/>
 
-    </div>
-    <div className="relative">
-
-    <Footer/>
-    </div>
+        </div>
       </div>
-      
 
-
-    );
-  }
-  
+      {/* Footer Section */}
+      <div className="relative">
+        <Footer />
+      </div>
+    </div>
+  );
+}
