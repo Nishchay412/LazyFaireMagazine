@@ -48,18 +48,18 @@ export function Footer() {
 
       {/* Footer Bottom */}
       <div className="mt-12 text-center">
-        <h1 className="text-4xl sm:text-6xl font-extrabold opacity-10 text-purple-200">
-          EMAIL ME
-        </h1>
+      
         <p className="mt-4 text-sm text-purple-400">
           &copy; 2024 Lazy Faire Magazine. All rights reserved.
         </p>
-        <div className="mt-2 space-x-4">
+        <div className="mt-2 gap-2 flex items-center justify-center ">
           <a href="#" className="text-purple-400 hover:underline">
-            Terms of Service
+            <img src="/linkedin (2).png " className="w-8 h-8">
+            </img>
           </a>
           <a href="#" className="text-purple-400 hover:underline">
-            Privacy Policy
+          <img src="/instagram.png" className="w-8 h-8 mt-1">
+            </img>
           </a>
         </div>
       </div>
