@@ -22,19 +22,19 @@ export function Read_Magazine() {
         </div>
       ) : (
         <div className="relative overflow-hidden border shadow-lg mx-auto w-full bg-white rounded-md">
-          <iframe
-            src="/Finalmagazine.pdf#toolbar=0&navpanes=0&scrollbar=0"
-            className="w-full"
-            style={{
-              height: "70vh",
-              border: "none",
-              overflow: "hidden",
-              zoom: "0.8",
-              maxWidth: "100%",
-            }}
-            title="LazyFaire Magazine"
-          />
-        </div>
+  <iframe
+    src="/Finalmagazine.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit"
+    className="w-full"
+    style={{
+      height: "70vh",
+      border: "none",
+      overflow: "hidden",
+      maxWidth: "100%",
+    }}
+    title="LazyFaire Magazine"
+  />
+</div>
+
       )}
 
       <footer className="text-center text-white text-sm mt-4">
