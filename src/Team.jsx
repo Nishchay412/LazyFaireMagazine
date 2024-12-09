@@ -1,39 +1,49 @@
 import React from "react";
 import { team } from "./components/teaminfo"; // Assuming 'team' is the array holding team data
+import { Header } from "./components/Header";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+
 export function Team() {
+  const navigate = useNavigate();
+
+  // Navigation function
+  function handleNavigation(path) {
+    navigate(`/${path}`);
+  }
+
   return (
-    <div className="flex flex-col bg-[url('/background.png')] bg-cover bg-center">
-      <h1 className="font-bold text-3xl text-center text-white py-8 shadow-md">
-        LAZY FAIRE MAGAZINE TEAM
-      </h1>
-      <div className="flex flex-col gap-6">
+    <div className="flex flex-col bg-[url('/backgroundimage.png')] bg-cover bg-fixed bg-center min-h-screen">
+      {/* Header */}
+      <Header />
+
+      {/* Main Content */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-24 px-6 sm:px-8 md:px-12">
         {team.map((item, index) => (
           <div
             key={index}
-            className={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}  px-4`}
+            className="relative w-full max-w-full shadow-xl rounded-lg overflow-hidden"
           >
-            {/* Container for the image and button */}
-            <div className="relative w-full max-w-4xl">
-              {/* Image */}
-              <img
-                src={item.image}
-                alt={item.role}
-                className="w-full h-[350px] sm:h-[250px] md:h-[400px] object-cover rounded-lg shadow-lg"
-              />
-              {/* Gradient Overlay */}
-              <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-lg"></div>
-              
-              {/* Role Text and Button */}
-              <div className="absolute bottom-4 right-4 flex flex-col items-center space-y-2">
-                {/* Arrow Image */}
-               
-                {/* Role Button */}
-                <button className="text-white font-semibold text-lg sm:text-xl bg-black bg-opacity-50 px-3 py-1 rounded-md">
-                  {item.role}
-                </button>
-              </div>
+            {/* Team Member Image */}
+            <img
+              src={item.image}
+              alt={item.role}
+              className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover"
+            />
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+            {/* Role Text and Button */}
+            <div className="absolute bottom-6 left-6 flex flex-col items-start space-y-3">
+              <span className="text-white font-bold text-lg sm:text-xl md:text-2xl">
+                {item.name}
+              </span>
+              <button
+                className="text-white font-medium text-sm sm:text-base bg-black bg-opacity-70 px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300"
+                onClick={() => handleNavigation(`Team/${item.role}`)}
+              >
+                {item.role}
+              </button>
             </div>
           </div>
         ))}
