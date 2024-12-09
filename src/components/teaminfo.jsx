@@ -162,6 +162,24 @@ export const internal = [
 
 
 ];
+export const external = [
+  {
+    position: "VP External",
+    name: "Jerick Nucum",
+    email: "nucum@ualberta.ca",
+    faculty: "Business",
+    img: "Jerick External.jpg"
+  },
+  {
+    position: "External Director",
+    name: "Goutham Krishna",
+    email: "shanessa@ualberta.ca",
+    faculty: "Arts",
+    img: "insta post.jpg"
+  },
+
+
+];
 
   export const team = [
     { "role": "Executives", "image": "LF-executive.png" },

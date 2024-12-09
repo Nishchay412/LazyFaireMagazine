@@ -6,6 +6,7 @@ import { Executives } from "./Executive";
 import { Creative } from "./Creative";
 import { Editorial } from "./Editorial";
 import { Internal } from "./Internal";
+import { External } from "./External";
 
 import { Read_Magazine } from "./readmagazine";
 import {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/Team/Internal",
     element: < Internal/>,
+  },
+  {
+    path: "/Team/External",
+    element: < External/>,
   },
   {
     path: "/Magazineread",
