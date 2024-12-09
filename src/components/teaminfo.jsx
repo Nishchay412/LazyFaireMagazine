@@ -144,6 +144,25 @@ export const editorial = [
 
 ];
 
+export const internal = [
+  {
+    position: "VP Internal",
+    name: "Lorenzo Contreras",
+    email: "lcontre1@ualberta.ca",
+    faculty: "Business",
+    img: "internal.jpg"
+  },
+  {
+    position: "Quality and DEI Coordinator",
+    name: "Josh Rivor",
+    email: "shanessa@ualberta.ca",
+    faculty: "Arts",
+    img: "josh DEI coordinator.jpg"
+  },
+
+
+];
+
   export const team = [
     { "role": "Executives", "image": "LF-executive.png" },
     { "role": "Creative", "image": "LF-Creative.jpg" },
