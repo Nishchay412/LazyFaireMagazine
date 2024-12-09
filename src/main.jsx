@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { Team } from "./Team";
 import { Executives } from "./Executive";
 import { Creative } from "./Creative";
+import { Editorial } from "./Editorial";
 
 import { Read_Magazine } from "./readmagazine";
 import {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/Team/Creative",
     element: < Creative/>,
+  },
+  {
+    path: "/Team/Editorial",
+    element: < Editorial/>,
   },
   {
     path: "/Magazineread",

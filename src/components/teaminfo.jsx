@@ -98,11 +98,56 @@ export const executives = [
     },
   
 ];
+export const editorial = [
+  {
+    position: "VP Editorial",
+    name: "Zoë Kemppi",
+    email: "kemppi@ualberta.ca",
+    faculty: "Business",
+    img: "Zoe editorial.jpg"
+  },
+  {
+    position: "Research Editor",
+    name: "Khushal Seth",
+    email: "shanessa@ualberta.ca",
+    faculty: "Arts",
+    img: "Khushal research.jpg"
+  },
+  {
+    position: "Editor",
+    name: "Natalie Zannata",
+    email: "nucum@ualberta.ca",
+    faculty: "Business",
+    img : "Natalie Editor.jpg"
+  },
+  {
+    position: "Guest Writer",
+    name: "Camryn Jackson",
+    email: "mmakhija@ualberta.ca",
+    faculty: "Business",
+    img : "camryn guest writer.jpg"
+  },
+  {
+    position: "Writer",
+    name: "Nitasha Baig",
+    email: "zahrah1@ualberta.ca",
+    faculty: "Business",
+    img : "Nitasha Writer.jpg"
+  },
+  {
+    position: "Writer",
+    name: "Prerna Sumesh",
+    email: "lcontre1@ualberta.ca",
+    faculty: "",
+    img:"sumesh writer.jpg"
+  },
+
+];
 
   export const team = [
     { "role": "Executives", "image": "LF-executive.png" },
     { "role": "Creative", "image": "LF-Creative.jpg" },
-    { "role": "Finance", "image": "LF-Something.jpg" },
+    { "role": "Editorial", "image": "LF-Something.jpg" },
     { "role": "Internal", "image": "LF-Internal.jpg" },
     { "role": "External", "image": "LF-External.jpg" },
   ];
