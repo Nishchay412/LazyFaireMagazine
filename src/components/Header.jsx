@@ -7,8 +7,12 @@ export function Header() {
 
   function handleNavigation(page) {
     setSidebarOpen(false); // Close the sidebar when a link is clicked
-    navigate(`/${page}`); // Navigate to the selected page
-  }
+    if (page !== "Home") {
+      navigate(`/${page}`);
+    } else {
+      navigate("/");
+    }
+  } // Fixed: Added the closing brace for the function
 
   return (
     <div className="relative w-full">
@@ -61,7 +65,7 @@ export function Header() {
       {isSidebarOpen && (
         <div className="fixed top-0 left-0 w-64 h-full bg-white text-gray-800 z-50 shadow-lg transition-transform transform">
           <button
-            className="absolute top-4 right-4 text-gray-200 focus:outline-none"
+            className="absolute top-4 right-4 text-gray-800 focus:outline-none"
             onClick={() => setSidebarOpen(false)}
           >
             {/* Close Icon */}
@@ -86,7 +90,7 @@ export function Header() {
             {["Home", "Team", "Magazine"].map((page) => (
               <div
                 key={page}
-                className="text-lg font-bold hover:bg-gray- p-2 rounded-lg cursor-pointer"
+                className="text-lg font-bold hover:bg-gray-200 p-2 rounded-lg cursor-pointer"
                 onClick={() => handleNavigation(page)}
               >
                 {page.toUpperCase()}
