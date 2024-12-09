@@ -9,15 +9,22 @@ export function Editorial() {
   ];
 
   return (
-    <div className=" flex flex-col justify-center items-center py-8 bg-[url('/backgroundimage.png')]  bg-fixed h-full"  >
-      <h1 className="text-3xl text-white font-bold mb-8">Our Creative Team</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-7xl px-4 ">
+    <div
+      className="flex flex-col justify-center items-center py-8 min-h-screen bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/backgroundimage.png')", // Your background image
+        backgroundAttachment: "fixed", // Ensure it stays fixed
+      }}
+    >
+      <h1 className="text-3xl text-white font-bold mb-8">Our Editorial Team</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-7xl px-4">
         {reorderededitorial.map((item, index) => (
           <div
             key={index}
             className={`flex flex-col items-center p-4 bg-gradient-to-br from-white-400 text via-gray-500 to-gray-700 rounded-lg shadow-md ${
-              item.name === "Zoë Kemppi" ? "border-2 border-blue-800 items-center justify-center py-2" 
-              : ""
+              item.name === "Zoë Kemppi"
+                ? "border-2 border-blue-800 items-center justify-center py-2"
+                : ""
             }`}
           >
             {/* Image */}
