@@ -53,14 +53,19 @@ export function Footer() {
           &copy; 2024 Lazy Faire Magazine. All rights reserved.
         </p>
         <div className="mt-2 gap-2 flex items-center justify-center ">
-          <a href="#" className="text-purple-400 hover:underline">
-            <img src="/linkedin (2).png " className="w-8 h-8">
-            </img>
-          </a>
-          <a href="#" className="text-purple-400 hover:underline">
-          <img src="/instagram.png" className="w-8 h-8 mt-1">
-            </img>
-          </a>
+        <a href="https://www.linkedin.com/company/lazy-faire-magazine/" 
+   className="text-purple-400 hover:underline" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <img src="/linkedin (2).png" className="w-6 h-6" />
+</a>
+<a href="https://www.instagram.com/lazyfairemagazine/" 
+   className="text-purple-400 hover:underline" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <img src="/instagram.png" className="w-6 h-6 mt-1" />
+</a>
+
         </div>
       </div>
     </div>
