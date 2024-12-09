@@ -55,7 +55,8 @@ export const executives = [
     { "role": "Executives", "image": "LF-executive.png" },
     { "role": "Creative", "image": "LF-Creative.jpg" },
     { "role": "Finance", "image": "LF-Something.jpg" },
-    { "role": "Internal", "image": "LF - Internal.png" }
+    { "role": "Internal", "image": "LF-Internal.jpg" },
+    { "role": "External", "image": "LF-External.jpg" },
   ];
   
       
