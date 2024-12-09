@@ -3,6 +3,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Team } from "./Team";
 import { Executives } from "./Executive";
+import { Creative } from "./Creative";
 
 import { Read_Magazine } from "./readmagazine";
 import {
@@ -13,6 +14,7 @@ import {
 
 import "./index.css";
 import App from "./App.jsx";
+
 
 // Define the router configuration
 const router = createBrowserRouter([
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/Team/Executives",
     element: < Executives/>,
+  },
+  {
+    path: "/Team/Creative",
+    element: < Creative/>,
   },
   {
     path: "/Magazineread",
