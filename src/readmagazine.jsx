@@ -10,7 +10,7 @@ export function Read_Magazine() {
       {/* Responsive Iframe Container */}
       <div className="overflow-hidden border shadow-lg mx-auto w-full max-w-full bg-white rounded-md">
         <iframe
-          src="/FirstDraft.pdf#toolbar=0&navpanes=0&scrollbar=0"
+          src="/Finalmagazine.pdf#toolbar=0&navpanes=0&scrollbar=0"
           className="w-full h-full"
           style={{ height: "70vh", border: "none" }}
           title="LazyFaire Magazine"
