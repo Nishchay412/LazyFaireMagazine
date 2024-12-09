@@ -49,7 +49,7 @@ export function Header() {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex gap-5">
-          {["Home", "Team", "Magazine"].map((page) => (
+          {["Home", "Team", "Magazine Issues"].map((page) => (
             <div
               key={page}
               className="text-transparent bg-clip-text bg-gradient-to-r from-pink-100 via-purple-200 to-indigo-300 font-bold hover:shadow-lg hover:cursor-pointer hover:shadow-indigo-300 hover:rounded-lg transition-all duration-300"
@@ -87,7 +87,7 @@ export function Header() {
 
           {/* Sidebar Navigation Links */}
           <div className="flex flex-col gap-5 mt-20 p-4">
-            {["Home", "Team", "Magazine"].map((page) => (
+            {["Home", "Team", "Magazine Issues"].map((page) => (
               <div
                 key={page}
                 className="text-lg font-bold hover:bg-gray-200 p-2 rounded-lg cursor-pointer"
