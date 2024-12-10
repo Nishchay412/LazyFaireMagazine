@@ -12,7 +12,7 @@ export function Read_Magazine() {
       {isMobile ? (
         <div className="text-center">
           <a
-            href="/Finalmagazine.pdf"
+            href="https://online.fliphtml5.com/dsamo/hekz/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white underline text-lg"
@@ -23,16 +23,16 @@ export function Read_Magazine() {
       ) : (
         <div className="relative overflow-hidden border shadow-lg mx-auto w-full bg-white rounded-md">
   <iframe
-    src="/Finalmagazine.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit"
-    className="w-full"
+    src="https://online.fliphtml5.com/dsamo/hekz/"
+    title="LazyFaire Magazine Flipbook"
     style={{
-      height: "70vh",
+      width: "100%", // Ensures it spans the full width of the container
+      height: "85vh", // Adjusts the height to occupy a reasonable viewport
       border: "none",
-      overflow: "hidden",
-      maxWidth: "100%",
+      transform: "scale(0.9)", // Scales down the content slightly
+      transformOrigin: "top center", // Keeps the scaling centered
     }}
-    title="LazyFaire Magazine"
-  />
+  ></iframe>
 </div>
 
       )}
