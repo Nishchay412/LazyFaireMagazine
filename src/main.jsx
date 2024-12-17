@@ -7,6 +7,7 @@ import { Creative } from "./Creative";
 import { Editorial } from "./Editorial";
 import { Internal } from "./Internal";
 import { External } from "./External";
+import { Issues } from "./Issues";
 
 import { Read_Magazine } from "./readmagazine";
 import {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
   {
     path: "/Magazineread",
     element: <Read_Magazine/>,
+  },
+  {
+    path: "/magazine-issues",
+    element: <Issues/>,
   }
 ]);
 

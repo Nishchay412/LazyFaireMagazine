@@ -21,20 +21,17 @@ export function Read_Magazine() {
           </a>
         </div>
       ) : (
-        <div className="relative overflow-hidden border shadow-lg mx-auto w-full bg-white rounded-md">
-  <iframe
-    src="https://online.fliphtml5.com/dsamo/hekz/"
-    title="LazyFaire Magazine Flipbook"
-    style={{
-      width: "100%", // Ensures it spans the full width of the container
-      height: "85vh", // Adjusts the height to occupy a reasonable viewport
-      border: "none",
-      transform: "scale(0.9)", // Scales down the content slightly
-      transformOrigin: "top center", // Keeps the scaling centered
-    }}
-  ></iframe>
-</div>
-
+        <div className="relative overflow-hidden border shadow-lg mx-auto w-full max-w-5xl bg-white rounded-md">
+          <iframe
+            src="https://online.fliphtml5.com/dsamo/hekz/"
+            title="LazyFaire Magazine Flipbook"
+            style={{
+              width: "100%", // Full width of the container
+              height: "90vh", // Adjust height for better readability
+              border: "none",
+            }}
+          ></iframe>
+        </div>
       )}
 
       <footer className="text-center text-white text-sm mt-4">

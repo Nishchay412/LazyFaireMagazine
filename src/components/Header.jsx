@@ -7,12 +7,17 @@ export function Header() {
 
   function handleNavigation(page) {
     setSidebarOpen(false); // Close the sidebar when a link is clicked
-    if (page !== "Home") {
-      navigate(`/${page}`);
+  
+    // Remove spaces and convert to a URL-friendly format
+    const formattedPage = page.replace(/\s+/g, "-").toLowerCase(); 
+  
+    if (formattedPage !== "home") {
+      navigate(`/${formattedPage}`);
     } else {
       navigate("/");
     }
-  } // Fixed: Added the closing brace for the function
+  }
+ 
 
   return (
     <div className="relative w-full">
