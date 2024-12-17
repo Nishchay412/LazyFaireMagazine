@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export function Read_Magazine() {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  useEffect(() => {
+    // Dynamically inject the FlippingBook script
+    const script = document.createElement("script");
+    script.src = "https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=675970383";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Clean up the script if the component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="h-screen bg-[url('/backgroundimage.png')] bg-cover bg-center p-4 overflow-x-hidden">
@@ -12,7 +26,7 @@ export function Read_Magazine() {
       {isMobile ? (
         <div className="text-center">
           <a
-            href="https://online.fliphtml5.com/dsamo/hekz/"
+            href="https://online.flippingbook.com/view/675970383/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white underline text-lg"
@@ -21,16 +35,20 @@ export function Read_Magazine() {
           </a>
         </div>
       ) : (
-        <div className="relative overflow-hidden border shadow-lg mx-auto w-full max-w-5xl bg-white rounded-md">
-          <iframe
-            src="https://online.fliphtml5.com/dsamo/hekz/"
-            title="LazyFaire Magazine Flipbook"
-            style={{
-              width: "100%", // Full width of the container
-              height: "90vh", // Adjust height for better readability
-              border: "none",
-            }}
-          ></iframe>
+        <div className="relative mx-auto w-full max-w-5xl">
+          <a
+            href="https://online.flippingbook.com/view/675970383/"
+            className="fbo-embed"
+            data-fbo-id="416f728f2d"
+            data-fbo-ratio="3:2"
+            data-fbo-lightbox="yes"
+            data-fbo-width="100%"
+            data-fbo-height="auto"
+            data-fbo-version="1"
+            style={{ maxWidth: "100%" }}
+          >
+            Finalmagazine
+          </a>
         </div>
       )}
 
