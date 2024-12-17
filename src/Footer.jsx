@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 grid items-center gap-8 relative">
         {/* Newsletter Section */}
         <div className="bg-purple-700 mx-auto mt-10 sm:absolute sm:top-1/4 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:w-[50%] p-6 rounded-lg">
-          <h2 className="font-semibold text-lg mb-4 text-center sm:text-left">
+          <h2 className="font-semibold text-lg mb-4 text-center ml-12 sm:text-left">
             Sign up for our newsletter and never miss an update!
           </h2>
           <div className="flex flex-col sm:flex-row items-center">

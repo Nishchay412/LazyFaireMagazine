@@ -162,6 +162,40 @@ export const internal = [
 
 
 ];
+export const marketing = [
+  {
+    position: "VP Marketing",
+    name: "Zahrah Ismail",
+    email: "nucum@ualberta.ca",
+    faculty: "Business",
+    img: "Zahrah Marketing.jpg"
+  },
+  {
+    
+    name: "Social Media Coordinator",
+    position: "Christina Zhang",
+    email: "shanessa@ualberta.ca",
+    faculty: "Arts",
+    img: "christina zang aocial media coordinator.jpg"
+  }
+  
+  ,
+  {
+    position: "Marketing Director (Visuals)",
+    name: "Felicia Ooi",
+    email: "shanessa@ualberta.ca",
+    faculty: "Arts",
+    img: "felicia ooi.jpg"
+  },
+  {
+    position: "Marketing Director (Analytics)",
+    name: "Bhawna Chuahan",
+    email: "shanessa@ualberta.ca",
+    faculty: "Arts",
+    img: "Bhawna Chauhan.jpg"
+  }
+  
+  ,];
 export const external = [
   {
     position: "VP External",
@@ -181,12 +215,16 @@ export const external = [
 
 ];
 
+
   export const team = [
     { "role": "Executives", "image": "LF-executive.png" },
     { "role": "Creative", "image": "LF-Creative.jpg" },
     { "role": "Editorial", "image": "LF-Something.jpg" },
+    {"role":"Marketing","image":"LF-Marketing.jpg"},
+    {"role":"Finance","image":"Finance.png"},
     { "role": "Internal", "image": "LF-Internal.jpg" },
     { "role": "External", "image": "LF-External.jpg" },
+    
   ];
   
       
