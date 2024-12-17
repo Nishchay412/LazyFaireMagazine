@@ -19,9 +19,11 @@ export function Team() {
       {/* Main Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-24 px-6 sm:px-8 md:px-12">
         {team.map((item, index) => (
+          // Wrap the entire card with an onClick
           <div
             key={index}
-            className="relative w-full max-w-full shadow-xl rounded-lg overflow-hidden"
+            className="relative w-full max-w-full shadow-xl rounded-lg overflow-hidden hover:cursor-pointer"
+            onClick={() => handleNavigation(`Team/${item.role}`)} // Click anywhere triggers navigation
           >
             {/* Team Member Image */}
             <img
@@ -40,7 +42,6 @@ export function Team() {
               </span>
               <button
                 className="text-white font-medium text-sm sm:text-base bg-black bg-opacity-70 px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300"
-                onClick={() => handleNavigation(`Team/${item.role}`)}
               >
                 {item.role}
               </button>

@@ -15,30 +15,41 @@ export function Hero() {
       {/* Background Section */}
       <div className="bg-[url('/backgroundimage.png')] h-screen bg-cover bg-center">
         {/* Centered Front Page Magazine and Button */}
-        <div></div>
         <div className="flex flex-col items-center justify-center h-full">
-          {/* Magazine Cover */}
+          {/* Magazine Cover Animation */}
           <motion.div
-            className="w-auto h-auto max-w-xs max-h-[75vh] object-contain rounded-lg shadow-lg py-2 mt-10" // Added `mt-10` for spacing
-            initial={{ boxShadow: "0px 0px 0px rgba(255, 255, 255, 0)" }}
-            animate={{
-              boxShadow: [
-                "0px 0px 0px rgba(255, 255, 255, 1)",
-                "0px 0px 20px rgba(255, 255, 255, 1)",
-                "0px 0px 0px rgba(255, 255, 255, 1)",
-                "0px 0px 0px rgba(255, 255, 255, 1)",
-              ],
-            }}
+            className="w-auto h-auto max-w-xs max-h-[75vh] object-contain rounded-lg shadow-lg py-2 mt-10"
+            initial={{ opacity: 0, y: 200 }} // Start fully transparent and 200px below
+            animate={{ opacity: 1, y: 0 }} // Animate to full opacity and natural position
             transition={{
-              duration: 2,
-              repeat: Infinity,
+              duration: 1, // 1 second duration
+              ease: "easeOut", // Smooth easing
             }}
           >
-            <img
-              src="/frontpage_magazine.png"
-              className="w-auto h-auto max-w-xs max-h-[75vh] object-contain"
-              alt="Front page magazine"
-            />
+            <motion.div
+              animate={{
+                boxShadow: [
+                  "0px 0px 0px rgba(255, 255, 255, 1)",
+                  "0px 0px 20px rgba(255, 255, 255, 1)",
+                  "0px 0px 0px rgba(255, 255, 255, 1)",
+                ],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+              }}
+              className="rounded-lg"
+            >
+              <img
+                src="/frontpage_magazine.png"
+                className="w-auto h-auto max-w-xs max-h-[75vh] object-contain hover:cursor-pointer rounded-lg"
+                alt="Front page magazine"
+                onClick={() => {
+                  console.log("Read Button Clicked");
+                  handleNavigation();
+                }}
+              />
+            </motion.div>
           </motion.div>
 
           {/* Button Section */}
