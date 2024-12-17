@@ -191,5 +191,6 @@ export const external = [
   
       
  export const magazines =[
-  {"date": "13th December 2024", "image":"/frontpage_magazine.png"}
+  {"date": "13th December 2024", "image":"/frontpage_magazine.png"},
+  {"date":"November 2023","image":"/NovemberIssue.png"}
  ]
