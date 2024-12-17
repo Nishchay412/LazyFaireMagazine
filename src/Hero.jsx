@@ -19,11 +19,11 @@ export function Hero() {
           {/* Magazine Cover Animation */}
           <motion.div
             className="w-auto h-auto max-w-xs max-h-[75vh] object-contain rounded-lg shadow-lg py-2 mt-10"
-            initial={{ opacity: 0, y: 200 }} // Start fully transparent and 200px below
-            animate={{ opacity: 1, y: 0 }} // Animate to full opacity and natural position
+            initial={{ opacity: 0, y: 200 }} // Starts below its position
+            animate={{ opacity: 1, y: 0 }} // Slides up to natural position
             transition={{
-              duration: 1, // 1 second duration
-              ease: "easeOut", // Smooth easing
+              duration: 1,
+              ease: "easeOut",
             }}
           >
             <motion.div
@@ -65,10 +65,16 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Footer Section */}
-      <div className="relative">
+      {/* Footer Section with Animation */}
+      <motion.div
+        className="relative"
+        initial={{ opacity: 0, y: 50 }} // Starts below its position
+        whileInView={{ opacity: 1, y: 0 }} // Animates to its natural position
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true }} // Animates only once when it enters the viewport
+      >
         <Footer />
-      </div>
+      </motion.div>
     </div>
   );
 }
