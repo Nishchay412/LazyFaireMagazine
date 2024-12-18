@@ -4,11 +4,10 @@ export function Read_Magazine() {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   useEffect(() => {
-    // Dynamically inject the FlippingBook script
+    // Dynamically inject the Elfsight script
     const script = document.createElement("script");
-    script.src = "https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=675970383";
+    script.src = "https://static.elfsight.com/platform/platform.js";
     script.async = true;
-    script.defer = true;
     document.body.appendChild(script);
 
     return () => {
@@ -36,19 +35,11 @@ export function Read_Magazine() {
         </div>
       ) : (
         <div className="relative mx-auto w-full max-w-5xl">
-          <a
-            href="https://online.flippingbook.com/view/675970383/"
-            className="fbo-embed"
-            data-fbo-id="416f728f2d"
-            data-fbo-ratio="3:2"
-            data-fbo-lightbox="yes"
-            data-fbo-width="100%"
-            data-fbo-height="auto"
-            data-fbo-version="1"
-            style={{ maxWidth: "100%" }}
-          >
-            Finalmagazine
-          </a>
+          {/* Elfsight Flipbook Embed */}
+          <div
+            className="elfsight-app-5683c14c-70f5-4f1b-9558-1191f164aef3"
+            data-elfsight-app-lazy
+          ></div>
         </div>
       )}
 
