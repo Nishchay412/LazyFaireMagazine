@@ -214,6 +214,24 @@ export const external = [
 
 
 ];
+export const finance  = [
+  {
+    position: "VP Finance",
+    name: "Mohit Makhija",
+    email: "nucum@ualberta.ca",
+    faculty: "Business",
+    img: "mohit finance-01-01.jpg"
+  },
+  {
+    position: "Accountant",
+    name: "Mehrin Reza",
+    email: "shanessa@ualberta.ca",
+    faculty: "Arts",
+    img: "Mehrin.jpg"
+  },
+
+
+];
 
 
   export const team = [

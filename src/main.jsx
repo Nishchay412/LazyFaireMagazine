@@ -11,6 +11,7 @@ import { Issues } from "./Issues";
 import { About_us } from "./Aboutus";
 import { Marketing } from "./Marketing";
 import { Read_Magazine } from "./readmagazine";
+import { Finance } from "./Finance";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/Team/Internal",
     element: < Internal/>,
+  },
+  {
+    path: "/Team/Finance",
+    element: < Finance/>,
   },
   {
     path: "/Team/External",
