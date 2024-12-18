@@ -9,7 +9,7 @@ import { Internal } from "./Internal";
 import { External } from "./External";
 import { Issues } from "./Issues";
 import { About_us } from "./Aboutus";
-
+import { Marketing } from "./Marketing";
 import { Read_Magazine } from "./readmagazine";
 import {
   createBrowserRouter,
@@ -42,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/Team/Editorial",
     element: < Editorial/>,
+  },
+  {
+    path: "/Team/Marketing",
+    element: < Marketing/>,
   },
   {
     path: "/Team/Internal",
