@@ -8,6 +8,7 @@ import { Editorial } from "./Editorial";
 import { Internal } from "./Internal";
 import { External } from "./External";
 import { Issues } from "./Issues";
+import { About_us } from "./Aboutus";
 
 import { Read_Magazine } from "./readmagazine";
 import {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/Magazineread",
     element: <Read_Magazine/>,
+  },
+  {
+    path: "/AboutUs",
+    element: <About_us/>,
   },
   {
     path: "/magazine-issues",
