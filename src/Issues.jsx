@@ -7,8 +7,8 @@ import { motion } from "framer-motion"; // Import Framer Motion
 export function Issues() {
   const navigate = useNavigate();
 
-  function handleNavigation(index) {
-    navigate(`/Magazineread/${index}`);
+  function handleNavigation(link) {
+    navigate(link);
   }
 
   return (
@@ -30,7 +30,7 @@ export function Issues() {
                 src={item.image}
                 alt={`Issue ${index}`}
                 className="w-full h-[200px] sm:h-[250px] md:h-auto object-cover rounded-md hover:cursor-pointer shadow-lg"
-                onClick={() => handleNavigation(index)}
+                onClick={() => handleNavigation(item.link)}
               />
             </div>
 
@@ -43,7 +43,7 @@ export function Issues() {
 
               <button
                 className="mt-3 underline hover:text-gray-400 text-sm sm:text-base"
-                onClick={() => handleNavigation(index)}
+                onClick={() => handleNavigation(item.link)}
               >
                 Read More
               </button>

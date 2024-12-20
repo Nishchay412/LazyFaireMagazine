@@ -12,6 +12,7 @@ import { About_us } from "./Aboutus";
 import { Marketing } from "./Marketing";
 import { Read_Magazine } from "./readmagazine";
 import { Finance } from "./Finance";
+import { Read_Magazine2 } from "./readmagazine2";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "/Magazineread",
     element: <Read_Magazine/>,
+  },
+  {
+    path: "/Magazineread2",
+    element: <Read_Magazine2/>,
   },
   {
     path: "/AboutUs",
