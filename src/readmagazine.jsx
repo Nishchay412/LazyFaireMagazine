@@ -1,20 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export function Read_Magazine() {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  useEffect(() => {
-    // Dynamically inject the Elfsight script
-    const script = document.createElement("script");
-    script.src = "https://static.elfsight.com/platform/platform.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Clean up the script if the component unmounts
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <div className="h-screen bg-[url('/backgroundimage.png')] bg-cover bg-center p-4 overflow-x-hidden">
@@ -34,12 +21,26 @@ export function Read_Magazine() {
           </a>
         </div>
       ) : (
-        <div className="relative mx-auto w-full max-w-5xl">
-          {/* Elfsight Flipbook Embed */}
-          <div
-            className="elfsight-app-5683c14c-70f5-4f1b-9558-1191f164aef3"
-            data-elfsight-app-lazy
-          ></div>
+        <div
+          className="relative mx-auto w-full max-w-5xl"
+          style={{ height: "80vh" }}
+        >
+          {/* Publuu Flipbook Embed */}
+          <iframe
+            src="https://publuu.com/flip-book/754362/1672950/page/1?embed"
+            width="100%"
+            height="100%"
+            scrolling="no"
+            frameBorder="0"
+            allow="clipboard-write; autoplay; fullscreen"
+            className="publuuflip"
+            style={{
+              border: "none",
+              width: "100%",
+              height: "100%",
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+            }}
+          ></iframe>
         </div>
       )}
 
