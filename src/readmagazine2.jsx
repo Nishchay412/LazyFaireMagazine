@@ -1,14 +1,12 @@
 import React from "react";
-
+import { Header } from "./components/Header";
 export function Read_Magazine2() {
   return (
     <div className="h-screen bg-[url('/backgroundimage.png')] bg-cover bg-center p-4 overflow-x-hidden">
-      <h1 className="text-center text-xl md:text-2xl font-semibold text-white mb-4">
-        LazyFaire Magazine
-      </h1>
+     <Header/>
 
       <div
-        className="relative mx-auto w-full max-w-5xl"
+        className="relative mx-auto w-full mt-14 max-w-5xl"
         style={{ height: "80vh" }}
       >
         {/* Heyzine Flipbook Embed */}
