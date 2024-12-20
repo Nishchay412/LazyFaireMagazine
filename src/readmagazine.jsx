@@ -25,21 +25,18 @@ export function Read_Magazine() {
           className="relative mx-auto w-full max-w-5xl"
           style={{ height: "80vh" }}
         >
-          {/* Publuu Flipbook Embed */}
+          {/* Heyzine Flipbook Embed */}
           <iframe
-            src="https://publuu.com/flip-book/754362/1672950/page/1?embed"
-            width="100%"
-            height="100%"
+            allowFullScreen
             scrolling="no"
-            frameBorder="0"
-            allow="clipboard-write; autoplay; fullscreen"
-            className="publuuflip"
+            className="fp-iframe"
             style={{
-              border: "none",
+              border: "1px solid lightgray",
               width: "100%",
               height: "100%",
               boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
             }}
+            src="https://heyzine.com/flip-book/314ff53df2.html"
           ></iframe>
         </div>
       )}
