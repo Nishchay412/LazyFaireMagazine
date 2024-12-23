@@ -29,8 +29,8 @@ export function About_us() {
       <section className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 md:px-12 py-6">
         {/* Left Side: Text */}
         <div className="md:w-1/2 md:pr-6">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4">Our Values</h2>
-          <p className="text-sm md:text-lg leading-relaxed">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center ">Our Values</h2>
+          <p className="text-sm md:text-lg leading-relaxed text-center">
             Lazy Faire is a student-run magazine dedicated to fostering
             connection within the Alberta School of Business community. Our
             mission is to deliver content that is engaging, insightful, and
