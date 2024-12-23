@@ -70,7 +70,7 @@ const router = createBrowserRouter([
     element: <Read_Magazine2/>,
   },
   {
-    path: "/AboutUs",
+    path: "/about-us",
     element: <About_us/>,
   },
   {
