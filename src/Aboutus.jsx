@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Header } from "./components/Header";
 
 export function About_us() {
@@ -11,16 +12,26 @@ export function About_us() {
       ></div>
 
       {/* Content Wrapper */}
-      <div className="relative z-10 ">
+      <div className="relative z-10">
         {/* Header Section */}
         <Header />
 
         {/* Mission Statement Section */}
         <section className="flex flex-col justify-center items-center py-12 mt-9 px-4 md:px-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-center mb-6">
+          <motion.h1
+            className="text-3xl md:text-5xl font-bold text-center mb-6"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             OUR MISSION STATEMENT
-          </h1>
-          <p className="text-base md:text-xl text-center leading-relaxed max-w-4xl font-medium sm:font-semibold">
+          </motion.h1>
+          <motion.p
+            className="text-base md:text-xl text-center leading-relaxed max-w-4xl font-medium sm:font-semibold"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+          >
             Lazy Faire Magazine is the voice of the Alberta School of Business
             community at the University of Alberta. Run for students, by
             students, we are committed to promoting business communication
@@ -31,13 +42,19 @@ export function About_us() {
             alumni. At Lazy Faire, we aim to foster a learning environment where
             creativity, collaboration, and inclusivity thrive both on and off
             campus.
-          </p>
+          </motion.p>
         </section>
 
         {/* Values Section */}
         <section className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 md:px-12 py-6">
           {/* Left Side: Text */}
-          <div className="md:w-1/2 md:pr-6">
+          <motion.div
+            className="md:w-1/2 md:pr-6"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center">
               Our Values
             </h2>
@@ -51,20 +68,26 @@ export function About_us() {
               disciplines, uniting their talents to create a platform that
               celebrates collaboration and creativity. Lazy Faire is committed
               to showcasing the achievements, experiences, and efforts of our
-              community-students, faculty, and alumni-while promoting a culture
+              community—students, faculty, and alumni—while promoting a culture
               of diversity, equity, and inclusion. By sharing these stories, we
               aim to inspire learning and understanding, both on and off campus.
             </p>
-          </div>
+          </motion.div>
 
           {/* Right Side: Image */}
-          <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
+          <motion.div
+            className="md:w-1/2 flex justify-center mt-6 md:mt-0"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2.2, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.6 }}
+          >
             <img
               src="LF-executive.png"
               alt="Lazy Faire Magazine Team"
               className="w-full max-w-sm md:max-w-md h-auto object-contain rounded-lg shadow-lg"
             />
-          </div>
+          </motion.div>
         </section>
       </div>
     </div>
