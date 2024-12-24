@@ -68,7 +68,7 @@ export function About_us() {
               disciplines, uniting their talents to create a platform that
               celebrates collaboration and creativity. Lazy Faire is committed
               to showcasing the achievements, experiences, and efforts of our
-              community  and alumni—while promoting a culture
+              community  and alumni while promoting a culture
               of diversity, equity, and inclusion. By sharing these stories, we
               aim to inspire learning and understanding, both on and off campus.
             </p>
