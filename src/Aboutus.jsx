@@ -36,7 +36,7 @@ export function About_us() {
             community at the University of Alberta. Run for students, by
             students, we are committed to promoting business communication
             through semesterly issues that explore engaging and relevant
-            business-related topics. Our mission is to provide opportunities
+            business related topics. Our mission is to provide opportunities
             for involvement, leadership, and professional growth, while
             celebrating the diverse achievements of students, faculty, and
             alumni. At Lazy Faire, we aim to foster a learning environment where
@@ -68,7 +68,7 @@ export function About_us() {
               disciplines, uniting their talents to create a platform that
               celebrates collaboration and creativity. Lazy Faire is committed
               to showcasing the achievements, experiences, and efforts of our
-              community—students, faculty, and alumni—while promoting a culture
+              community  and alumni—while promoting a culture
               of diversity, equity, and inclusion. By sharing these stories, we
               aim to inspire learning and understanding, both on and off campus.
             </p>
