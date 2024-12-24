@@ -16,7 +16,7 @@ export function About_us() {
         <Header />
 
         {/* Mission Statement Section */}
-        <section className="flex flex-col justify-center items-center h-screen px-4 md:px-12">
+        <section className="flex flex-col justify-center items-center py-12 mt-9 px-4 md:px-12">
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-6">
             OUR MISSION STATEMENT
           </h1>
