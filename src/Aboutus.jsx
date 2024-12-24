@@ -20,7 +20,7 @@ export function About_us() {
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-6">
             OUR MISSION STATEMENT
           </h1>
-          <p className="text-base md:text-xl text-center leading-relaxed max-w-4xl font-medium">
+          <p className="text-base md:text-xl text-center leading-relaxed max-w-4xl font-medium sm:font-semibold">
             Lazy Faire Magazine is the voice of the Alberta School of Business
             community at the University of Alberta. Run for students, by
             students, we are committed to promoting business communication
@@ -41,7 +41,7 @@ export function About_us() {
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center">
               Our Values
             </h2>
-            <p className="text-sm md:text-lg leading-relaxed text-center font-medium">
+            <p className="text-sm md:text-lg leading-relaxed text-center font-medium sm:font-semibold">
               Lazy Faire is a student-run magazine dedicated to fostering
               connection within the Alberta School of Business community. Our
               mission is to deliver content that is engaging, insightful, and
