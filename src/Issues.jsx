@@ -29,7 +29,7 @@ export function Issues() {
               <img
                 src={item.image}
                 alt={`Issue ${index}`}
-                className="w-full h-auto max-h-[400px] object-cover rounded-md hover:cursor-pointer shadow-lg"
+                className="w-full h-auto max-h-[400px] px-5 object-cover rounded-md hover:cursor-pointer shadow-lg"
                 onClick={() => handleNavigation(item.link)}
               />
             </div>
