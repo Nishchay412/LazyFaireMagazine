@@ -57,13 +57,13 @@ export function Footer() {
    className="text-purple-400 hover:underline" 
    target="_blank" 
    rel="noopener noreferrer">
-    <img src="/linkedin (2).png" className="w-6 h-6" />
+    <img src="/linkedin (4).png" className="w-6 h-6" />
 </a>
 <a href="https://www.instagram.com/lazyfairemagazine/" 
-   className="text-purple-400 hover:underline" 
+   className="text-purple-400 hover:underline mb-1" 
    target="_blank" 
    rel="noopener noreferrer">
-    <img src="/instagram.png" className="w-6 h-6 mt-1" />
+    <img src="/instagram (1).png" className="w-6 h-6 mt-1" />
 </a>
 
         </div>
