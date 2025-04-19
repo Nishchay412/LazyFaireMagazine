@@ -13,6 +13,7 @@ import { Marketing } from "./Marketing";
 import { Read_Magazine } from "./readmagazine";
 import { Finance } from "./Finance";
 import { Read_Magazine2 } from "./readmagazine2";
+import { Read_Magazine3 } from "./readmagazine3";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/Team/Marketing",
     element: < Marketing/>,
+  },
+  {
+    path: "/Magazineread3",
+    element: <Read_Magazine3/>,
   },
   {
     path: "/Team/Internal",

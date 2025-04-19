@@ -247,7 +247,7 @@ export const finance  = [
   
       
  export const magazines =[
+  {"date":"April 2025","image":"/AprilIssue.png","link":"/Magazineread3"},
   {"date": "December 2024", "image":"/frontpage_magazine.png","link":"/Magazineread"},
   {"date":"November 2023","image":"/NovemberIssue.png","link":"/Magazineread2"}
-
  ]

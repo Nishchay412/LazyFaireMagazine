@@ -7,7 +7,7 @@ export function Hero() {
   const navigate = useNavigate();
 
   function handleNavigation() {
-    navigate(`/Magazineread`); // Navigate to the selected page
+    navigate(`/Magazineread3`); // Navigate to the selected page
   }
 
   return (
@@ -41,7 +41,7 @@ export function Hero() {
               className="rounded-lg"
             >
               <img
-                src="/frontpage_magazine.png"
+                src="/AprilIssue.png"
                 className="w-auto h-auto max-w-xs max-h-[75vh] object-contain hover:cursor-pointer rounded-lg"
                 alt="Front page magazine"
                 onClick={() => {
